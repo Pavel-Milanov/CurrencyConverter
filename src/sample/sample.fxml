@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="238.0" layoutY="39.0" prefHeight="70.0" prefWidth="560.0" text="Currency converter" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="171.0" text="choose currency" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="160.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="473.0" layoutY="171.0" text="choose to convert" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="160.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBox2" layoutX="14.0" layoutY="225.0" onAction="#changing" prefHeight="60.0" prefWidth="200.0" promptText="Click" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="200.0" />
+      <ComboBox fx:id="comboBox1" layoutX="20.0" layoutY="225.0" onAction="#changing" prefHeight="60.0" prefWidth="200.0" promptText="Click" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="200.0" />
+      <Button fx:id="btn" layoutX="240.0" layoutY="400.0" mnemonicParsing="false" onAction="#convertTo" prefHeight="60.0" prefWidth="150.0" text="Convert" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="400.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textField" alignment="CENTER" layoutX="207.0" layoutY="300.0" prefHeight="80.0" prefWidth="200.0" promptText="Enter Value" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="300.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="output" alignment="CENTER" editable="false" layoutX="207.0" layoutY="472.0" prefHeight="80.0" prefWidth="200.0" promptText="Converted" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="600.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </TextField>
+      <Label layoutX="255.0" layoutY="505.0" prefHeight="70.0" prefWidth="200.0" text="Converted value" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="520.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="chosenCurrency" layoutX="421.0" layoutY="318.0" text="Currency" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="318.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="convertCurrency" layoutX="420.0" layoutY="618.0" text="Currency" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="618.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
